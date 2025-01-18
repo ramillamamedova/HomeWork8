@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045B40922D3C4725002DDBF2 /* PrinterrDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B40912D3C4715002DDBF2 /* PrinterrDelegate.swift */; };
+		045B40942D3C4735002DDBF2 /* Printerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B40932D3C472F002DDBF2 /* Printerr.swift */; };
 		CE5E37152BA5E244009BB608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E37142BA5E244009BB608 /* AppDelegate.swift */; };
 		CE5E37172BA5E244009BB608 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E37162BA5E244009BB608 /* SceneDelegate.swift */; };
 		CE5E371C2BA5E244009BB608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5E371A2BA5E244009BB608 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045B40912D3C4715002DDBF2 /* PrinterrDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterrDelegate.swift; sourceTree = "<group>"; };
+		045B40932D3C472F002DDBF2 /* Printerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printerr.swift; sourceTree = "<group>"; };
 		CE5E37112BA5E244009BB608 /* Lesson8HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson8HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5E37142BA5E244009BB608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5E37162BA5E244009BB608 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			children = (
 				CE5E37142BA5E244009BB608 /* AppDelegate.swift */,
 				CE5E37162BA5E244009BB608 /* SceneDelegate.swift */,
+				045B40912D3C4715002DDBF2 /* PrinterrDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5E372F2BA7110F009BB608 /* MainViewController.swift */,
+				045B40932D3C472F002DDBF2 /* Printerr.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5E37352BA71536009BB608 /* GreenViewController.swift in Sources */,
+				045B40942D3C4735002DDBF2 /* Printerr.swift in Sources */,
 				CE5E373F2BA71950009BB608 /* Printer.swift in Sources */,
 				CE5E37302BA7110F009BB608 /* MainViewController.swift in Sources */,
 				CE5E37152BA5E244009BB608 /* AppDelegate.swift in Sources */,
@@ -245,6 +252,7 @@
 				CE5E373D2BA7189C009BB608 /* YellowViewController.swift in Sources */,
 				CE5E37172BA5E244009BB608 /* SceneDelegate.swift in Sources */,
 				CE5E37412BA7248A009BB608 /* BlueViewController.swift in Sources */,
+				045B40922D3C4725002DDBF2 /* PrinterrDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

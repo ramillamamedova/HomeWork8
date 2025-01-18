@@ -7,31 +7,25 @@
 
 import UIKit
 
-class YellowViewController: UIViewController {
+class YellowViewController: UIViewController, PrinterrDelegate {
     
-    var printer: Printer!
+    var printerr: Printerr!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setup()
+        setupPrinterr()
     }
     
     func textToPrint() -> String {
-        return "🚖 - жовте таксі у дорозі"
+        return "🚖 - yellow taxi on the road"
     }
-}
-
-//MARK: - Private
-private extension YellowViewController {
     
-    func setupUI() {
+    private func setupUI() {
         view.backgroundColor = .lightYellow
-        
         let taxiLabel = UILabel()
         taxiLabel.text = "🚖"
         taxiLabel.font = .systemFont(ofSize: 200.0)
-        
         view.addSubview(taxiLabel)
         
         taxiLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -39,11 +33,13 @@ private extension YellowViewController {
         taxiLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
-    func setup() {
-        
-        printer = Printer()
-        printer.yellowViewController = self
-        
-        printer.startPrinting()
+    private func setupPrinterr() {
+        printerr = Printerr()
+        printerr.delegate = self 
+        printerr.startPrinting()
+    }
+    
+    deinit {
+        printerr.stopPrinting()
     }
 }
